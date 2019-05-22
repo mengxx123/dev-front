@@ -1,6 +1,8 @@
 <template>
     <my-page title="开发运维" :page="page">
-        <app-list :data="groups" />
+        <div class="common-container">
+            <app-list :data="groups" />
+        </div>
     </my-page>
 </template>
 
@@ -108,6 +110,22 @@
                                 icon: '/static/img/build.svg',
                                 to: 'xxx',
                                 href: 'https://cmd.yunser.com/',
+                                target: '_blank'
+                            },
+                            {
+                                name: 'UUID 生成器',
+                                desc: '',
+                                icon: '/static/img/build.svg',
+                                to: 'xxx',
+                                href: 'https://util.yunser.com/uuid',
+                                target: '_blank'
+                            },
+                            {
+                                name: 'HDB3码',
+                                desc: '',
+                                icon: '/static/img/build.svg',
+                                to: 'xxx',
+                                href: 'https://hardware.yunser.com/messageCode',
                                 target: '_blank'
                             }
                         ]

@@ -11,6 +11,8 @@ let routes = [
         path: '/',
         component: Home
     },
+    { path: '/viewSource', component: resolve => require(['@/views/ViewSource'], resolve) },
+    { path: '/graph', component: resolve => require(['@/views/Graph'], resolve) },
     {
         path: '*',
         component: Error404

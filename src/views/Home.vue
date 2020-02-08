@@ -7,6 +7,7 @@
 </template>
 
 <script>
+    /* eslint-disable */
     export default {
         data () {
             return {
@@ -82,6 +83,12 @@
                                 to: 'xxx',
                                 href: 'https://http.yunser.com/',
                                 target: '_blank'
+                            },
+                            {
+                                name: '查看网页代码',
+                                desc: '',
+                                icon: '/static/img/http.svg',
+                                to: '/viewSource',
                             }
                         ]
                     },
@@ -127,7 +134,13 @@
                                 to: 'xxx',
                                 href: 'https://hardware.yunser.com/messageCode',
                                 target: '_blank'
-                            }
+                            },
+                            {
+                                name: '图（数据结构）',
+                                desc: '',
+                                icon: '/static/img/build.svg',
+                                to: '/graph',
+                            },
                         ]
                     }
                 ],
